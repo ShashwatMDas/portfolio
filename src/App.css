@@ -13,6 +13,34 @@
   }
 }
 
+.NavBar {
+  width: 25vw !important;
+
+}
+
+.bubbles {
+
+  width: 100%;
+
+ height: 100%;
+
+ position: fixed;
+
+ 
+
+ /* background-image: linear-gradient(to bottom right, #e6dbc9, #e6dbc9,  #e6dbc9); */
+
+
+ background-color: "red";
+ background-size: cover;
+
+ background-position: 50% 50%;
+
+ background-repeat: no-repeat;
+
+ z-index: 1;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
