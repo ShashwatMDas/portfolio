@@ -70,7 +70,7 @@ function Home(props) {
           Hi, I am <span style={{color: "#037fff"}}>Shashwat M. Das</span>
         </Typography>
         <Typography paragraph>
-          I am a Full-Stack Developer. 
+          I am a Full-Stack Developer. I am currentl senior manager at Entrepreneurship Cell, IIT Kharagpur 
         </Typography>
         <a href="https://www.facebook.com/yupiamshashwat" style={{color: "#fff", zIndex: 100, position: 'relative'}}><FacebookIcon /></a>&emsp;<a style={{color: "#fff", zIndex: 100, position: 'relative'}} href="https://in.linkedin.com/in/shashwat-m-das-92bb8b156"><LinkedInIcon /></a>&emsp;<a style={{color: "#fff", zIndex: 100, position: 'relative'}} href="https://www.instagram.com/shashwatmdas/"><InstagramIcon /></a>&emsp;<a style={{color: "#fff", zIndex: 100, position: 'relative'}} href="https://github.com/ShashwatMDas"><GitHubIcon /></a>
       </main>
