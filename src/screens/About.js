@@ -120,7 +120,7 @@ function Home(props) {
           
         </Typography>
         <Grid container spacing={3}>
-        <Grid item xs={4}>
+        <Grid item sm={4}>
         <Card className={classes.card}>
         <CardContent>
         <CodeIcon style={{color: "#fff", fontSize: 50}} />
@@ -138,7 +138,7 @@ function Home(props) {
         </CardActions>
         </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item sm={4}>
         <Card className={classes.card}>
         <CardContent>
         <LanguageIcon style={{color: "#fff", fontSize: 50}} />
@@ -156,7 +156,7 @@ function Home(props) {
         </CardActions>
         </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item sm={4}>
         <Card className={classes.card}>
         <CardContent>
         <AndroidIcon style={{color: "#fff", fontSize: 50}} /><AppleIcon style={{color: "#fff", fontSize: 50, marginLeft: 20}} />
@@ -175,6 +175,7 @@ function Home(props) {
         </Card>
         </Grid>
         </Grid>
+        <br /><br /><br />
       </main>
     </div>
   );

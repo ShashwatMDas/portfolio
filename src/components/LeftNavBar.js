@@ -24,7 +24,9 @@ import {
   
 
 
-const drawerWidth = '25vw';
+const drawerWidth = window.screen.width > 600 ? window.screen.width*0.2: window.screen.width*0.4;
+
+const headerColor = window.screen.width > 600 ? 'transparent' : "#fff";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -37,10 +39,6 @@ const useStyles = makeStyles((theme) => ({
       flexShrink: 0,
       
     },
-    [theme.breakpoints.down('sm')]: {
-        width: '40vw',
-        flexShrink: 0,
-    }
   },
   appBar: {
     [theme.breakpoints.up('sm')]: {
@@ -69,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
+  heading: {
+    color: headerColor
+  }
 }));
 
 function LeftNavBar(props) {
@@ -85,7 +86,9 @@ function LeftNavBar(props) {
     <div className={classes.navbarcont}>
       <div className={classes.toolbar} />
       <Divider />
+      <center>
       <img src="/shash.jpg" style={{width: "80%", height: "auto", borderRadius: "50%"}} />
+      </center>
       <Divider />
       <Router>
       <List style={{backgroundColor: "#4b057b", marginTop: 50}}>
@@ -117,8 +120,8 @@ function LeftNavBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-            Responsive drawer
+          <Typography variant="h6" noWrap className={classes.heading}>
+            Shashwat M. Das
           </Typography>
         </Toolbar>
       </AppBar>

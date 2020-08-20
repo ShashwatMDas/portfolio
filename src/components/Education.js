@@ -19,9 +19,7 @@ const WorkExperience = () => {
         >
           <h3 className="vertical-timeline-element-title">Indian Institute of Technology, Kharagpur</h3>
           <h4 className="vertical-timeline-element-subtitle">BTech in Biotechnology</h4>
-          <p>
-            Developed a React Native App.
-          </p>
+          
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -33,9 +31,7 @@ const WorkExperience = () => {
         >
           <h3 className="vertical-timeline-element-title">DAV Public School, Patna</h3>
           <h4 className="vertical-timeline-element-subtitle">5th - 12th Grade</h4>
-          <p>
-            Developed a React Native App.
-          </p>
+          
         </VerticalTimelineElement> 
         </VerticalTimeline>
         </div>
