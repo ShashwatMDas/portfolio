@@ -2,7 +2,7 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-
+import "../App.css"
 const WorkExperience = () => {
 
     return (
@@ -55,7 +55,7 @@ const WorkExperience = () => {
           icon={<BusinessCenterIcon />}
         >
           <h3 className="vertical-timeline-element-title">Portfolio</h3>
-          <h4 className="vertical-timeline-element-subtitle"><a style={{zIndex: 1000, position: "absolute"}} href="shashwatmdas.info">Go to site</a></h4>
+          <h4 className="vertical-timeline-element-subtitle"><a style={{zIndex: 1000, position: "absolute"}} href="https://shashwatmdas.info">Go to site</a></h4>
           <p>
           •Built a personal portfolio website using ReactJS with my own continuous development and integration system.<br/><br/>
           •Built and deployed a continuous integration and development system using Github Webhooks, NodeJS and shell commands.<br/><br/>

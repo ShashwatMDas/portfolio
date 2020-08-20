@@ -10,12 +10,17 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+const starsCount = window.screen.width > 600 ? 50 : 10;
+
 
 function App() {
   return (
+    <ThemeProvider theme={THEME}>
     <div className="App">
       <div className="bubbles">
-      <ParticlesBg type="cobweb" bg={true} num={50} color="#a701e3" />
+      <ParticlesBg type="cobweb" bg={true} num={starsCount} color="#a701e3" />
       </div>
       <Router>
       <Route path="/" exact>
@@ -31,7 +36,18 @@ function App() {
       </Switch>
       </Router>
     </div>
+    </ThemeProvider>
   );
 }
+
+const THEME = createMuiTheme({
+  typography: {
+   "fontFamily": `"Poppins", "Helvetica", "Arial", sans-serif`,
+   "fontSize": 14,
+   "fontWeightLight": 300,
+   "fontWeightRegular": 400,
+   "fontWeightMedium": 500
+  }
+});
 
 export default App;

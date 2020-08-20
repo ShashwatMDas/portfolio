@@ -100,7 +100,9 @@ function Home(props) {
         <div style={{flexDirection: 'column', width: "100%"}}>
         <Grid container >
         <Grid item sm={6} style={{flex: 1}}>
-        <img src="/shashwat.jpg" style={{height: '40vh', width: window.screen.width > 500 ? '30vw': '95%'}} />
+        <center>
+        <img src="/shashw.jpg" style={{height: '40vh', }} />
+        </center>
         </Grid>
         <Grid item sm={6} >
         <Typography variant="h4">

@@ -8,6 +8,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
+
 const drawerWidth = (window.screen.width > 600 ? '20vw' : '40vw');
 
 
@@ -17,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#000",
     color: "#fff",
     height: "100vh",
-    flexDirection: 'row'
+    flexDirection: 'row',
+    fontFamily: "'Poppins', sans-serif !important"
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
@@ -30,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
+      fontFamily: "'Poppins', sans-serif !important"
     },
   },
   menuButton: {
@@ -42,11 +45,13 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: "#191d2b"
+    backgroundColor: "#191d2b",
+    fontFamily: "'Poppins', sans-serif !important"
   },
   navbarcont: {
     backgroundColor: "#191d2b",
-    color: "#fff"
+    color: "#fff",
+    fontFamily: "'Poppins', sans-serif !important"
   },
   content: {
     flexGrow: 1,
@@ -55,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
     // height: "100vh",
     alignItems: 'center',
     alignSelf: 'center',
+    fontFamily: "'Poppins', sans-serif !important",
     alignContent: 'center'
   },
 }));

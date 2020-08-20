@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(/font/Poppins-Light.ttf) format('ttf');
+}
+
+
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .App-logo {
@@ -15,7 +22,7 @@
 
 .NavBar {
   width: 25vw !important;
-
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .bubbles {
@@ -53,6 +60,7 @@
   color: #e74c3c;
   cursor: pointer;
   display: -webkit-box;
+  font-family: 'Poppins', sans-serif !important;
   display: flex;
   align-self: center;
   font-size: 1rem;
@@ -63,7 +71,7 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-weight: 700;
 }
 .btn:hover, .btn:focus {
@@ -88,6 +96,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins', sans-serif !important;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -95,6 +104,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {

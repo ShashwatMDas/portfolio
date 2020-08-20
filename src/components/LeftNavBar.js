@@ -32,12 +32,13 @@ const headerColor = window.screen.width > 600 ? 'transparent' : "#fff";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    fontFamily: "'Poppins', sans-serif !important"
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
       flexShrink: 0,
-      
+      fontFamily: "'Poppins', sans-serif !important"
     },
   },
   appBar: {
@@ -57,18 +58,22 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: "#191d2b"
+    backgroundColor: "#191d2b",
+    fontFamily: "'Poppins', sans-serif !important"
   },
   navbarcont: {
     backgroundColor: "#191d2b",
-    color: "#fff"
+    color: "#fff",
+    fontFamily: "'Poppins', sans-serif !important"
   },
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
+    fontFamily: "'Poppins', sans-serif !important"
   },
   heading: {
-    color: headerColor
+    color: headerColor,
+    fontFamily: "'Poppins', sans-serif !important"
   }
 }));
 
@@ -91,10 +96,10 @@ function LeftNavBar(props) {
       </center>
       <Divider />
       <Router>
-      <List style={{backgroundColor: "#4b057b", marginTop: 50}}>
+      <List style={{backgroundColor: "#4b057b", marginTop: 50, fontFamily: "'Poppins', sans-serif !important"}}>
         {['Home|/', 'About|/about', 'Resume|/resume'].map((text, index) => (
             <a style={{color: "#fff", textDecoration: 'none'}} href={text.split('|')[1]}>
-          <ListItem button key={text}>
+          <ListItem button key={text} style={{fontFamily: "'Poppins', sans-serif !important"}}>
             <ListItemText primary={text.split('|')[0]} style={{textAlign: 'center'}} />
           </ListItem>
           </a>
@@ -120,7 +125,7 @@ function LeftNavBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap className={classes.heading}>
+          <Typography variant="h6" noWrap className={classes.heading} style={{fontFamily: "'Poppins', sans-serif !important"}}>
             Shashwat M. Das
           </Typography>
         </Toolbar>
