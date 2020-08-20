@@ -99,10 +99,10 @@ function Home(props) {
         <div style={{width: "10vw", height: 10, flexDirection: 'column', backgroundColor: "#fff", borderRadius: 5, marginBottom: 30}}><div style={{flex: 1, backgroundColor: "#037fff", width: "5vw", height: 10, borderRadius: 5}}></div><div style={{flex: 1, backgroundColor: "#000", width: "5vw"}}></div></div>
         <div style={{flexDirection: 'column', width: "100%"}}>
         <Grid container >
-        <Grid item xs={6} style={{flex: 1}}>
-        <img src="/shashwat.jpg" style={{height: '40vh', width: '30vw'}} />
+        <Grid item sm={6} style={{flex: 1}}>
+        <img src="/shashwat.jpg" style={{height: '40vh', width: window.screen.width > 500 ? '30vw': '95%'}} />
         </Grid>
-        <Grid item xs={6} >
+        <Grid item sm={6} >
         <Typography variant="h4">
         Hi, I am <span style={{color: "#037fff"}}>Shashwat M. Das</span>
         </Typography>
