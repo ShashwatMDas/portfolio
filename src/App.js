@@ -36,18 +36,18 @@ function App() {
     window.addEventListener("load",handleLoading);
     return () => window.removeEventListener("load",handleLoading);
   },[])
-  if(isLoading) {
-    return (
-      <div style={{height: '100vh', width: '100vw', backgroundColor: "#000", justifyContent: 'center', alignItems: 'center', paddingTop: '20vh'}}>
-        <Lottie 
-          options={defaultOptions}
-          height={400}
-          width={400}
-          style={window.screen.width > 600 ? {} : {marginLeft: '-4vw'}}
-        />
-      </div>
-    )
-  }
+  // if(isLoading) {
+  //   return (
+  //     <div style={{height: '100vh', width: '100vw', backgroundColor: "#000", justifyContent: 'center', alignItems: 'center', paddingTop: '20vh'}}>
+  //       <Lottie 
+  //         options={defaultOptions}
+  //         height={400}
+  //         width={400}
+  //         style={window.screen.width > 600 ? {} : {marginLeft: '-4vw'}}
+  //       />
+  //     </div>
+  //   )
+  // }
   return (
     <ThemeProvider theme={THEME}>
     <div className="App">
