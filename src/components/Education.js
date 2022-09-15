@@ -17,7 +17,7 @@ const WorkExperience = () => {
           icon={<img src="./iitkgp.png" alt="reason" style={{height: "80%", marginTop: "8%", marginLeft: "15%"}} />}
         >
           <h3 className="vertical-timeline-element-title">Indian Institute of Technology, Kharagpur</h3>
-          <h4 className="vertical-timeline-element-subtitle">BTech in Biotechnology</h4>
+          <h4 className="vertical-timeline-element-subtitle">Bachelors in Technology</h4>
           
         </VerticalTimelineElement>
         <VerticalTimelineElement
