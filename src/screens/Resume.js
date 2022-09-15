@@ -269,9 +269,9 @@ function Home(props) {
           Resume
         </Typography>
         <div style={{width: window.screen.width > 600 ?  "10vw" : "50vw", height: 3, flexDirection: 'column', backgroundColor: "#fff", borderRadius: 5, marginBottom: 30}}><div style={{flex: 1, backgroundColor: COLOR_CODES['red'], width: window.screen.width > 600 ?  "5vw" : "25vw", height: 3, borderRadius: 5}}></div><div style={{flex: 1, backgroundColor: "#000", width: "5vw"}}></div></div>
-        /**<center>
-        <a href="/ShashwatMainResume2.pdf" download className="btn third" style={{zIndex: 100, position: 'relative', width: "80%", maxWidth: 330}}><span style={{marginTop: 3}} >Download Resume</span> &emsp; <GetAppIcon /></a>
-        </center> **/
+        //<center>
+        //<a href="/ShashwatMainResume2.pdf" download className="btn third" style={{zIndex: 100, position: 'relative', width: "80%", maxWidth: 330}}><span style={{marginTop: 3}} >Download Resume</span> &emsp; <GetAppIcon /></a>
+        //</center>
         <Typography variant="h5" style={{marginBottom: 30, textAlign: 'center'}}>
           <BusinessCenterIcon style={{paddingTop: 2}} />&emsp;Skills
         </Typography>
